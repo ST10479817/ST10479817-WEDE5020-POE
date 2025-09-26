@@ -4,73 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Company Logo --> 
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <!-- Navigation Bar -->
-        <nav id="topnav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""><a href="services.html"> Services: </a></label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li>Contact Us</li>    
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"><a href="services.html"> Services: </a></label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li>Contact Us</li>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
+        <!-- Main Content -->
 
-        <h1>Contact Us</h1>
-        <p>Get in touch with one of our offices near you. We are here to help with plumbing, electrical, and home maintenance needs.</p>
+        <main id="mainContent">
 
-        <!-- Johannesburg Head Office -->
-        
-        <h2>Johannesburg (Head Office)</h2>
-        <p>45 Main Road, Sandton, Johannesburg, 2196</p>
-        <p>Phone: 0834 555 6743</p>
-        <p>Email: housingrepairs@gmail.com</p>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.443191031165!2d28.0238959!3d-26.05176859999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95738b53dc51f7%3A0x5a35cf39c35f5d3a!2s45%20Main%20Rd%2C%20Bryanston%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1756291057269!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+            <!-- Contact Us Details -->
+            <div id="contactInformation">
+                <div id="contactDetails">
+                    <h1>Contact Us</h1>
+                    <p>Get in touch with one of our offices near you. We are here to help with plumbing, electrical, and home maintenance needs.</p>
+                </div>
 
-        <!-- Pretoria Branch -->
-        
-        <h2>Pretoria (Branch Office)</h2>
-        <p>17 Church Street, Arcadia, Pretoria, 0083</p>
-        <p>Phone: 0547 555 3704</p>
-        <p>Email: housingrepairs@gmail.com</p>
-     
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.7023346696287!2d28.176702775951604!3d-25.74735554552509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9562727d9285f3%3A0x8af8481e308673a5!2s17%20Church%20St%2C%20Pretoria%20Central%2C%20Pretoria%2C%200002!5e0!3m2!1sen!2sza!4v1756291139537!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Johannesburg Head Office -->
+                <div class="branchInformation"> 
+                    <h2>Johannesburg (Head Office)</h2>
+                    <p>45 Main Road, Sandton, Johannesburg, 2196</p>
+                    <p>Phone: 0834 555 6743</p>
+                    <p>Email: housingrepairs@gmail.com</p>
+                </div>
+                <div class="branchLoctions">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.443191031165!2d28.0238959!3d-26.05176859999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95738b53dc51f7%3A0x5a35cf39c35f5d3a!2s45%20Main%20Rd%2C%20Bryanston%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1756291057269!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>                
 
+                <!-- Pretoria Branch -->
+                <div class="branchInformation">
+                    <h2>Pretoria (Branch Office)</h2>
+                    <p>17 Church Street, Arcadia, Pretoria, 0083</p>
+                    <p>Phone: 0547 555 3704</p>
+                    <p>Email: housingrepairs@gmail.com</p>
+                </div>
+                <div class="branchLoctions">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.7023346696287!2d28.176702775951604!3d-25.74735554552509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9562727d9285f3%3A0x8af8481e308673a5!2s17%20Church%20St%2C%20Pretoria%20Central%2C%20Pretoria%2C%200002!5e0!3m2!1sen!2sza!4v1756291139537!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
+                <!-- Durban Branch -->
+                <div class="branchInformation">
+                    <h2>Durban (Branch Office)</h2>
+                    <p>89 Florida Road, Morningside, Durban</p>
+                    <p>Phone: 0856 555 5427</p>
+                    <p>Email: housingrepairs@gmail.com</p>
+                </div>
+                <div class="branchLoctions">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.9925569573184!2d31.01577147609611!3d-29.835636621625905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707639031080d%3A0xde5af94b897e9256!2s89%20Florida%20Rd%2C%20Windermere%2C%20Berea%2C%204001!5e0!3m2!1sen!2sza!4v1756291258633!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
         
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
 
-        <!-- Durban Branch -->
-        
-        <h2>Durban (Branch Office)</h2>
-        <p>89 Florida Road, Morningside, Durban</p>
-        <p>Phone: 0856 555 5427</p>
-        <p>Email: housingrepairs@gmail.com</p>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.9925569573184!2d31.01577147609611!3d-29.835636621625905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef707639031080d%3A0xde5af94b897e9256!2s89%20Florida%20Rd%2C%20Windermere%2C%20Berea%2C%204001!5e0!3m2!1sen!2sza!4v1756291258633!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
     
+    </div>
+
 </body>
 </html>

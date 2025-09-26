@@ -4,72 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - House Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <nav id="topnav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""> Services:</label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>     
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"> Services: </label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <h1>General Maintenance</h1>
-        <p>We provide reliable and professional home and office maintenance services. Our team ensures every project is completed with attention to detail, durability, and quality workmanship. Choose a service below and click Book Now to get started.</p>
+        <main id="mainContent">
+            <!-- Welcome Message -->
+            <div id="serviceInformation">
+                <h1>General Maintenance</h1>
+                <p>We provide reliable and professional home and office maintenance services. Our team ensures every project is completed with attention to detail, durability, and quality workmanship. Choose a service below and click Book Now to get started.</p>
+            </div>
+           
+            <!-- Services Section -->
+            <div id="services">
+            
+                <h2>Our Services</h2>
+                <!-- Plumbing Service -->
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Painting & Waterproofing</h3>       
+                        <p>
+                            We offer interior and exterior painting services using durable, high-quality paints. 
+                            Waterproofing is applied to prevent leaks, dampness and wall damage, ensuring a long-lasting finish.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/painting.png">
+                    </div>
+                </div>
 
-        
-        <h2>Painting & Waterproofing</h2>
-        <p>
-            We offer interior and exterior painting services using durable, high-quality paints. 
-            Waterproofing is applied to prevent leaks, dampness and wall damage, ensuring a long-lasting finish.
-        </p>
-        
-        <img src="_images/painting.png">
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Tiling & Waterproofing</h3>       
+                        <p>
+                            We install wall and floor tiles for kitchens, bathrooms and outdoor areas. 
+                            Our waterproofing ensures tiles remain secure and prevent water damage over time.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/drywalling.png">
+                    </div>
+                </div>
 
-        <h2>Tiling & Waterproofing</h2>
-        <p>
-            We install wall and floor tiles for kitchens, bathrooms and outdoor areas. 
-            Our waterproofing ensures tiles remain secure and prevent water damage over time.
-        </p>
-        
-        <img src="_images/drywalling.png">
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Ceiling & Drywall</h3>       
+                        <p>
+                            We repair and install ceilings and drywall systems. 
+                            Services include fixing sagging ceilings, building drywall rooms, and providing soundproofing solutions.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/ceiling.png">
+                    </div>
+                </div>
 
-        <h2>Ceiling & Drywall</h2>
-        <p>
-            We repair and install ceilings and drywall systems. 
-            Services include fixing sagging ceilings, building drywall rooms, and providing soundproofing solutions.
-        </p>
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Carpentry</h3>       
+                        <p>
+                            Our carpentry services cover repairs and installations of doors, cupboards, shelving, and wooden fittings. 
+                            From small fixes to custom woodwork, we ensure strong and neat finishes.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/carpentry.png">
+                    </div>
+                </div>
+            </div>  
+        </main>
 
-        <img src="_images/ceiling.png">
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
 
-
-        <h2>Carpentry</h2>
-        <p>
-            Our carpentry services cover repairs and installations of doors, cupboards, shelving, and wooden fittings. 
-            From small fixes to custom woodwork, we ensure strong and neat finishes.
-        </p>
-
-        <img src="_images/carpentry.png">
-
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
     
+    </div>
+
 </body>
 </html>

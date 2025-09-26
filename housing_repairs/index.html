@@ -4,62 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <!-- Company Logo --> 
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <!-- Navigation Bar -->
-        <nav id="topnav">
-            <ul>
-                <li>Home</li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""><a href="services.html"> Services: </a></label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>    
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li>Home</li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"><a href="services.html"> Services: </a></label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>    
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <!-- Welcome Message -->
-        <h1>Welcome to Housing Repairs</h1>
-        <p>We provide professional plumbing, electrical, and general maintenance services for your home.</p>
+        <!-- Main Content -->
 
-        <!-- Services Section -->
-        <h2>Our Services</h2>
-
-        <!-- Plumbing Service -->
-        <h3>Plumbing</h3>       
-        <p>Leak detection, burst pipes, drain unblocking and more.</p>
-
-        <img src="_images/plumber.jpg">
-
-        <!-- Electrical Service -->
-        <h3>Electrical</h3>        
-        <p>Fault findings, lighting installations, backup power setup and more.</p>
-
-        <img src="_images/electrician.png" >
-
-        <!-- Maintenance Service -->
-        <h3>Maintenance</h3>
-        <p>Painting, Carpentry, tiling, waterproofing and more.</p>
-
-        <img src="_images/painter.png">
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
+        <main id="mainContent">
     
+            <!-- Welcome Message -->
+            <div id="homeInformation">
+                <h1>Welcome to Housing Repairs</h1>
+                <p>We provide professional plumbing, electrical, and general maintenance services for your home.</p>
+            </div>
+
+            <!-- Services Section -->
+            <div id="services">
+            
+                <h2>Our Services</h2>
+                    <!-- Plumbing Service -->
+                    <div class="serviceBox">
+                        <div class="serviceText">
+                            <h3>Plumbing</h3>       
+                            <p>
+                                We provide a complete range of home repair and improvement services designed to give you peace of mind. 
+                                Our certified technicians work efficiently and use top-quality materials to ensure long-lasting solutions.
+                            </p>
+                        </div>
+                        <div class="serviceImage">
+                            <img src="_images/plumber.jpg" alt="Plumber fixing a pipe">
+                        </div>
+                    </div>
+
+                    <!-- Electrical Service -->
+                    <div class="serviceBox">
+                        <div class="serviceText">
+                            <h3>Electrical</h3>        
+                            <p>
+                                We specialize in fault finding, safe wiring, and professional electrical installations. 
+                                From lighting upgrades to generator and backup power setups, our electricians ensure your home remains powered and compliant with safety standards. 
+                                We also provide electrical compliance certificates (COCs).
+                            </p>
+                        </div>
+                        <div class="serviceImage">
+                            <img src="_images/electrician.png" alt="Electrician working on a circuit board">
+                        </div>
+                    </div>
+
+                    <!-- Maintenance Service -->
+                    <div class="serviceBox">
+                        <div class="serviceText">
+                            <h3>Maintenance</h3>
+                            <p>
+                                Keep your home looking its best with our maintenance solutions. 
+                                Our team handles painting, waterproofing, carpentry, tiling, and general handyman work. 
+                                We also take care of roof and ceiling repairs, ensuring your property stays strong and stylish.
+                            </p>
+                        </div>
+                        <div class="serviceImage">
+                            <img src="_images/painter.png" alt="Painter painting a wall">
+                        </div>
+                    </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </div>
+
 </body>
 </html>

@@ -6,73 +6,139 @@
     <title>Housing Repairs - Plumbing Services</title>
 </head>
 <body>
-    <header>
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <nav id="topnav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""> Services:</label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>     
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"> Services: </label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <h1>Plumbing Services</h1>
-        <p>We provide professional plumbing solutions for homes and small businesses. Choose a service below and click Book Now to request a quote.</p>
+        <main id="mainContent">
+            <!-- Welcome Message -->
+            <div id="serviceInformation">
+                <h1>Plumbing Services</h1>
+                <p>We provide professional plumbing solutions for homes and small businesses. Choose a service below and click Book Now to request a quote.</p>
+            </div>
+           
+            <!-- Services Section -->
+            <div id="services">
+            
+                <h2>Our Services</h2>
+                <!-- Plumbing Service -->
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Leak detection & repairs</h3>       
+                        <p>
+                            Our team uses visual inspection and pipe-tracing tools to locate leaks quickly.
+                            We repair or replace damaged pipe sections and test the system to ensure there are no further leaks. 
+                            Work includes minor welding, seal replacement and pressure testing where needed.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/fixing_pipes.png">
+                    </div>
+                </div>
 
-        
-        <h2>Leak detection & repairs</h2>
-        <p>
-            Our team uses visual inspection and pipe-tracing tools to locate leaks quickly.
-            We repair or replace damaged pipe sections and test the system to ensure there are no further leaks. 
-            Work includes minor welding, seal replacement and pressure testing where needed.
-        </p>
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Burst pipes & geysers</h3>       
+                        <p>
+                            For burst pipes we provide emergency response to stop water flow and limit damage.
+                            For geysers, we perform safety checks, pressure relief valve inspections
+                            and full system testing after repair or replacement.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/burst_pipes.png">
+                    </div>
+                </div>
 
-        <img src="_images/fixing_pipes.png">
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Drain unblocking</h3>       
+                        <p>
+                            We clear blocked drains using manual and mechanical methods. We use: high-pressure water jetting, and camera inspection for persistent blockages.
+                            After clearing, we run a full flush and advise on preventative maintenance.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/drain_unblocking.png">
+                    </div>
+                </div>
 
-        
-        <h2>Burst pipes & geysers</h2>
-        <p>
-            For burst pipes we provide emergency response to stop water flow and limit damage.
-            For geysers, we perform safety checks, pressure relief valve inspections
-            and full system testing after repair or replacement.
-        </p>
+                <div class="serviceBox">
+                    <div class="serviceText">
+                        <h3>Bathroom & Kitchen Installations</h3>       
+                        <p>
+                            We install sinks, taps, toilets, showers, and related plumbing for bathroom and kitchen
+                            renovations. Work includes accurate measurement, secure pipe connections, water-tight
+                            testing and final finish checks to ensure reliability and a clean installation.
+                        </p>
+                    </div>
+                    <div class="serviceImage">
+                        <img src="_images/bathrooms_installations.png">
+                    </div>
+                </div>
+            </div>  
+        </main>
 
-        <img src="_images/burst_pipes.png">
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
 
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </div>
 
-        <h2>Drain unblocking</h2>
-        <p>
-            We clear blocked drains using manual and mechanical methods. We use: high-pressure water jetting, and camera inspection for persistent blockages.
-            After clearing, we run a full flush and advise on preventative maintenance.
-        </p>
-
-        <img src="_images/drain_unblocking.png">
-
-        <h2>Bathroom & Kitchen Installations</h2>
-        <p>
-            We install sinks, taps, toilets, showers, and related plumbing for bathroom and kitchen
-            renovations. Work includes accurate measurement, secure pipe connections, water-tight
-            testing and final finish checks to ensure reliability and a clean installation.
-        </p>
-
-        <img src="_images/bathrooms_installations.png">
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
- 
 </body>
 </html>

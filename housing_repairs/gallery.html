@@ -4,61 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Company Logo --> 
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <!-- Navigation Bar -->
-        <nav id="topnav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""><a href="services.html"> Services: </a></label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li>Gallery</li>
-                <li><a href="contact.html">Contact Us</a></li>    
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"><a href="services.html"> Services: </a></label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li>Gallery</li>
+                        <li><a href="contact.html">Contact Us</a></li>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <h1>Our Work Gallery</h1>
-        <p>Take a look at some of the projects we have completed for our clients.</p>
-
-        <!-- Gallery Section -->
-
-        
-        <h2>Plumbing Projects</h2>
-        <img src="_images/bathroom.png" >
-        <img src="_images/kitchen.png" >
-        <img src="_images/plumber.jpg" >
-        
-
-        
-        <h2>Electrical Projects</h2>
-        <img src="_images/lights.png" >
-        <img src="_images/light_strip.png" >
-        <img src="_images/generator.png" >
-        
-        
-        <h2>Maintenance Projects</h2>
-        <img src="_images/roof.png" >
-        <img src="_images/tiles.png" >
-        <img src="_images/lounge.png" >
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
-
+        <!-- Main Content -->
     
+        <main id="mainContent">
+            
+            <div id="galleryInformation">
+                <h1>Our Work Gallery</h1>
+                <p>Explore our extensive portfolio of completed projects.</p>
+            
+
+            <!-- Gallery Section -->
+                <div id="plumbingSection">
+                    <h2>Plumbing Projects</h2>
+                    <div class="image">
+                        <img src="_images/bathroom.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/kitchen.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/plumber.jpg" >
+                    </div>
+                
+                <div id="electricalSection">
+                    <h2>Electrical Projects</h2>
+                    <div class="image">
+                        <img src="_images/lights.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/light_strip.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/generator.png" >
+                    </div>
+                </div>
+                
+                <div id="maintenanceSection">
+                    <h2>Maintenance Projects</h2>
+                    <div class="image">
+                        <img src="_images/roof.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/tiles.png" >
+                    </div>
+                    <div class="image">
+                        <img src="_images/lounge.png" >
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </div>
+
 </body>
 </html>

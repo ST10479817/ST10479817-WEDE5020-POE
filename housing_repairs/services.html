@@ -4,60 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <!-- Company Logo --> 
-        <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
-        <!-- Navigation Bar -->
-        <nav id="topnav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><label for=""> Services:</label>
-                    <select id="" onchange="location = this.value;">
-                        <option value="">select</option>
-                        <option value="electricalServices.html">Electrical Services</option>
-                        <option value="houseMaintenance.html">House Maintenance</option>
-                        <option value="plumbingServices.html">Plumbing Services</option>
-                    </select>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>     
-            </ul>
-        </nav>
-    </header>
+    <!-- Wrapper to contain the whole page -->
+    <div id="wrapper">
+        <header id="mainHeader">
+            <!-- Top bar with quick links -->
+            <div class="topBar">
+                <a href="#" class="topBarLink"> 0834 555 6743</a>
+                <a href="#" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link" width="50" height="50"></a>
+            </div>
+            <div class="headerContent">
+                <!-- Company Logo --> 
+                <div id="logo">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
+                </div>
+                <!-- Navigation Bar -->
+                <nav id="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li>
+                            <label for="serviceDropdown"> Services: </label>
+                            <select id="serviceDropdown" onchange="location = this.value;">
+                                <option value="">select</option>
+                                <option value="electricalservices.html">Electrical Services</option>
+                                <option value="housemaintenance.html">House Maintenance</option>
+                                <option value="plumbingservices.html">Plumbing Services</option>
+                            </select>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>     
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <h1>Our Services</h1>
-        <p>Housing Repairs provides professional services in plumbing, electrical work, and general home maintenance. Click below to learn more about each service.</p>
+        <!-- Main Content -->
 
-        <!-- Plumbing Section -->
-        
-        <h2>Plumbing Services</h2>
-        <p>We handle leak detection, burst pipes, drain unblocking, bathroom and kitchen plumbing installations, and more.</p>
-        <a href="plumbingServices.html">Learn More</a>
-        
+        <main id="mainContent">
+            <div class="serviceInformation">     
+                <h1>Our Services</h1>
+                <p>Housing Repairs provides professional services in plumbing, electrical work, and general home maintenance. Click below to learn more about each service.</p>
+            </div>
 
-        <!-- Electrical Section -->
-        
-        <h2>Electrical Services</h2>
-        <p>Our certified electricians provide fault finding, lighting installations, socket & switch installations, compliance certificates and backup power setups.</p>
-        <a href="electricalServices.html">Learn More</a>
-        
+            <!-- Plumbing Section -->           
+            <div class="plumbingCard">
+                <h2>Plumbing Services</h2>
+                <p>We handle leak detection, burst pipes, drain unblocking, bathroom and kitchen plumbing installations, and more.</p>
+                <div class="serviceBox">
+                    <h3></h3>
+                    <p></p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Leak Detection & Repairs</h3>
+                    <p>Advanced leak detection and professional repairs for all types of water leaks.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Burst Pipe Repairs</h3>
+                    <p>Emergency burst pipe repairs with 24/7 availability and rapid response.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Geyser Installation & Maintenance</h3>
+                    <p>Complete geyser services including installation, maintenance and repairs.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Drain Unblocking</h3>
+                    <p>Professional drain cleaning and unblocking using advanced equipment.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Bathroom & Kitchen Plumbing</h3>
+                    <p>Complete plumbing installations for bathrooms and kitchen renovations.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Water Pressure Issues</h3>
+                    <p>Diagnosing and fixing low water pressure problems throughout your home.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3></h3>
+                    <p></p>  
+                </div>
+                <div class="serviceBox">
+                    <h3></h3>
+                    <p></p>  
+                </div>
+                <a href="plumbingServices.html">Learn More</a>
+            </div>
+            
 
-        <!-- General House Maintenance Section -->
-        
-        <h2>General House Maintenance</h2>
-        <p>We offer painting, tiling, waterproofing, carpentry, ceiling & drywall repairs and other handyman tasks to keep your home in top shape.</p>
-        <a href="houseMaintenance.html">Learn More</a>
-        
+            <!-- Electrical Section -->  
+            <div id="electricalCard">
+                <h2>Electrical Services</h2>
+                <p>Our certified electricians provide fault finding, lighting installations, socket & switch installations, compliance certificates and backup power setups.</p>
+                <div class="serviceBox">
+                    <h3>Fault Finding & Repairs</h3>
+                    <p>Expert electrical fault diagnosis and repairs for all electrical issues.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Lighting Installations</h3>
+                    <p>Indoor and outdoor lighting installations including LED upgrades.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Power Sockets & Switches</h3>
+                    <p>Installation and replacement of power sockets and light switches.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Electrical Compliance Certificates</h3>
+                    <p>Official electrical compliance certificates for insurance and legal requirements.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Backup Power Setup</h3>
+                    <p>Inverter/UPS systems and generator connections for uninterrupted power.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3></h3>
+                    <p></p>  
+                </div>
+                <a href="electricalServices.html">Learn More</a>
+            </div>
 
-    </main>
+            <!-- General House Maintenance Section -->
+            <div id="maintenanceCard">
+                <h2>General House Maintenance</h2>
+                <p>We offer painting, tiling, waterproofing, carpentry, ceiling & drywall repairs and other handyman tasks to keep your home in top shape.</p>
+                <div class="serviceBox">
+                    <h3>Painting & Waterproofing</h3>
+                    <p>Interior and exterior painting with professional waterproofing services.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Tiling & Grouting Repairs</h3>
+                    <p>Tile installation, replacement and grouting repairs for all areas.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Carpentry Services</h3>
+                    <p>Door repairs, cupboard installation, shelving and custom carpentry work.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Drywall Installation & Repairs</h3>
+                    <p>Professional drywall installation, patching and repair services.</p>  
+                </div>
+                <div class="serviceBox">
+                    <h3>Ceiling Repairs</h3>
+                    <p>Ceiling repair, replacement and maintenance for all ceiling types.</p>  
+                </div>
+                <a href="houseMaintenance.html">Learn More</a>
+            </div>
 
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
-    </footer>
+        <!-- Footer -->
+        <footer id="mainFooter">
+            <div class="footerContainer">
+                <div class="footerColumn">
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
+                    <p>Your trusted partner for professional housing repairs and home maintenance services in Cape Town. Quality work, fair prices, and reliable service since 2021.</p>
+                </div>
+                    
+                <div class="footerColumn">
+                    <h3>Follow Us</h3>
+                    <div class="socialIcons">
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+                        <a href="#">
+                            <img src="_images/facebook_icon.png" alt="Facebook" width="30" height="30">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+    </div>
+
 </body>
 </html>
