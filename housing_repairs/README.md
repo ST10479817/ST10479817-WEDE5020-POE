@@ -97,3 +97,19 @@ GitHub Repository
 ## Sitemap
 
 ![alt text](image.png)
+
+
+# 9 Change Log
+## Improvements:
+### 9a  Rename some of the html pages
+I have renamed the electricalServices.html, houseMaintenance.html and plumbingServices.html as upper case letter is not allowed.
+### 9b Remove any whitespace in the code
+By reducing any space between the codes.
+### 9c Add more content on most of the web pages
+I have add more information to each page.
+
+
+
+
+
+## References 
