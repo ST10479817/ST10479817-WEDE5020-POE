@@ -102,14 +102,82 @@ GitHub Repository
 # 9 Change Log
 ## Improvements:
 ### 9a  Rename some of the html pages
-I have renamed the electricalServices.html, houseMaintenance.html and plumbingServices.html as upper case letter is not allowed.
+The electricalServices.html, houseMaintenance.html and plumbingServices.html as upper case letter is not allowed.
+electricalServices.html into electricalservices.html
+houseMaintenance.html into housemaintenance.html
+plumbingServices.html into plumbingservices.html
 ### 9b Remove any whitespace in the code
 By reducing any space between the codes.
+Cleaned up excess blank lines in HTML files.
+Added <div> containers to each html file to help with layouts.
+Minimized spacing in CSS for neater and easier-to-read code.
 ### 9c Add more content on most of the web pages
 I have add more information to each page.
+Expanded the About Us page with company history, vision, and mission.
+Enhanced service descriptions to give detailed explanations of plumbing, electrical, and maintenance services.
+Added more text and structure to make pages feel complete and informative.
+Included extra contact information for usability.
 
+## Part 2
 
+### 2. CSS Styling for Desktop Solution
 
+#### 2.1 Creating an Stylesheet
+I have created an CSS file "style.css" that is linked to each page.
+By using consistent naming convention in the stylesheet makes all pages look consistent and joined with the same theme.
 
+#### 2.2 Establishing a Base Style
+I have set default styles for the website for each page to use and look similar.
+I have also used a CSS reset to ensure consistent styling across the pages.
+"* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}"
+
+#### 2.3 Applying Typograpy Styles
+I have added classes and id's to each page to help with controlling the CSS properties.
+I used all types of CSS properties to make my website look as perfect and readable as possible.
+
+#### 2.4 Creating a Layout Structure
+I have added divs to section my content and make the layout easy to create the structure.
+Organized content into semantic sections (header, mainContent and footer).
+
+#### 2.5 Applying all Visual Styles 
+I have applied all different types of styles to help create my website to look as appling as possible.
+Styled navigation with hover effects, shadows and rounded corners.
+Added an orange border line below the header and above the footer for a polished look. Created visually distinct service boxes with aligned images and text.
+
+### 3. Resonsive Design
+
+#### 3.1 Breakpoints
+I have added the apporiate "@media" tags to work with tablets and moblie screens.
+
+#### 3.2 Relative Units
+I have added the correct units to work perfectly with each screen.
+
+#### 3.3 Responsive Images
+I have the correct tags to my images and it will react to every screen. It will get smaller depending on the size of the screen.
+
+#### 3.4 Test and Iterate
+Screenshots of the Homepage 
 
 ## References 
+GoDaddy, no date. GoDaddy Philippines. [Online]
+Available at: https://www.godaddy.com/en-ph
+[Accessed 6 August 2025].
+Google Analytics, no date. Analytics Provision. [Online]
+Available at: https://analytics.google.com/analytics/web/provision/#/provision
+[Accessed 6 August 2025].
+Unsplash, 2025. Unsplash Photos. [Online]
+Available at: https://unsplash.com/
+[Accessed 24 August 2025].
+W3C, no date. Web Content Accessibility Guidelines. [Online]
+Available at: https://www.w3.org/WAI/standards-guidelines/wcag/
+[Accessed 6 August 2025].
+WordPress.org, no date. WordPress Showcaase. [Online]
+Available at: https://wordpress.org/showcase/
+[Accessed 6 August 2025].
+Xneelo, no date. Xneelo — South Africa. [Online]
+Available at: https://xneelo.co.za/
+[Accessed 6 August 2025].
