@@ -10,6 +10,8 @@
 Housing Repairs is a hypothetical small business that started in 2021 to provide professional plumbing and general home maintenance services to residents and apartments in Johannesburg.  
 The project aims to develop a responsive website that provides information about services, allows customers to request quotes or book services, showcases previous work, and improves online visibility for the business.
 
+## GitHub Link
+Link: https://github.com/ST10479817/ST10479817-WEDE5020-POE.git 
 
 ## Website Goals and Objectives
 
@@ -32,10 +34,12 @@ The project aims to develop a responsive website that provides information about
 ## Key Features and Functionality
 1.	Homepage
 •	Top-level navigation bar
+•	Information presented in a professional way
 •	Images 
 2.	About Us
 •	Company history and mission
 •	Certifications
+•	Brand logos
 3.	Services
 •	Links to 3 websites
 •	Information about all services
@@ -45,6 +49,10 @@ The project aims to develop a responsive website that provides information about
 5.	Contact Page
 •	Top-level navigation bar
 •	Embedded Google Map
+•	Embedded Google Form
+6. Other feactures
+•	Responsive Designs with the ablity to adapt to deskop, tablet and mobile screens
+•	Responsive images and flexible layout
 
 ## Timeline and Milestones
 
@@ -96,7 +104,7 @@ GitHub Repository
 
 ## Sitemap
 
-![alt text](image.png)
+![Sitemap](image.png)
 
 
 # 9 Change Log
@@ -117,6 +125,12 @@ Expanded the About Us page with company history, vision, and mission.
 Enhanced service descriptions to give detailed explanations of plumbing, electrical, and maintenance services.
 Added more text and structure to make pages feel complete and informative.
 Included extra contact information for usability.
+### 9d Proposal features and functionality
+I have added more feactures and functionality information into the document. I have added more detail and changed the font in red on page 7.
+### 9e Content Research and Sourcing
+I have added more information with extra research. I have added more detail and changed the font in red on page 14.
+### 9f ReadMe needs to be improved
+
 
 ## Part 2
 
@@ -160,7 +174,20 @@ I have added the correct units to work perfectly with each screen.
 I have the correct tags to my images and it will react to every screen. It will get smaller depending on the size of the screen.
 
 #### 3.4 Test and Iterate
-Screenshots of the Homepage 
+Screenshots of the Homepage in Desktop size
+![Desktop size](desktop.png)
+Screenshots of the Homepage in Tablet size
+![Tablet size](tablet.png)
+Screenshots of the Homepage in Phone size
+![Phone size](phone.png)
+Screenshots of the Gallery in Desktop size
+![Desktop size](desktop_gallery.png)
+Screenshots of the Gallery in Tablet size
+![Tablet size](tablet_gallery.png)
+Screenshots of the Gallery in Phone size
+![Phone size](phone_gallery.png)
+
+
 
 ## References 
 GoDaddy, no date. GoDaddy Philippines. [Online]
