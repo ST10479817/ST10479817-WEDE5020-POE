@@ -104,7 +104,7 @@ GitHub Repository
 
 ## Sitemap
 
-![Sitemap](image.png)
+![Sitemap](_images/image.png)
 
 
 # 9 Change Log
@@ -130,14 +130,15 @@ I have added more feactures and functionality information into the document. I h
 ### 9e Content Research and Sourcing
 I have added more information with extra research. I have added more detail and changed the font in red on page 14.
 ### 9f ReadMe needs to be improved
+I have added more infomation from Part 1 and fixed the images. I have also added Part 2 into the ReadMe.
 
 
 ## Part 2
 
 ### 2. CSS Styling for Desktop Solution
 
-#### 2.1 Creating an Stylesheet
-I have created an CSS file "style.css" that is linked to each page.
+#### 2.1 Creating a Stylesheet
+I have created a CSS file "style.css" that is linked to each page.
 By using consistent naming convention in the stylesheet makes all pages look consistent and joined with the same theme.
 
 #### 2.2 Establishing a Base Style
@@ -149,7 +150,7 @@ I have also used a CSS reset to ensure consistent styling across the pages.
     box-sizing: border-box;
 }"
 
-#### 2.3 Applying Typograpy Styles
+#### 2.3 Applying Typograph Styles
 I have added classes and id's to each page to help with controlling the CSS properties.
 I used all types of CSS properties to make my website look as perfect and readable as possible.
 
@@ -158,14 +159,14 @@ I have added divs to section my content and make the layout easy to create the s
 Organized content into semantic sections (header, mainContent and footer).
 
 #### 2.5 Applying all Visual Styles 
-I have applied all different types of styles to help create my website to look as appling as possible.
+I have applied all different types of styles to help create my website to look as applying as possible.
 Styled navigation with hover effects, shadows and rounded corners.
 Added an orange border line below the header and above the footer for a polished look. Created visually distinct service boxes with aligned images and text.
 
-### 3. Resonsive Design
+### 3. Responsive Design
 
 #### 3.1 Breakpoints
-I have added the apporiate "@media" tags to work with tablets and moblie screens.
+I have added the appropriate "@media" tags to work with tablets and mobile screens.
 
 #### 3.2 Relative Units
 I have added the correct units to work perfectly with each screen.
@@ -175,17 +176,17 @@ I have the correct tags to my images and it will react to every screen. It will 
 
 #### 3.4 Test and Iterate
 Screenshots of the Homepage in Desktop size
-![Desktop size](desktop.png)
+![Desktop size](_images/desktop.png)
 Screenshots of the Homepage in Tablet size
-![Tablet size](tablet.png)
+![Tablet size](_images/tablet.png)
 Screenshots of the Homepage in Phone size
-![Phone size](phone.png)
+![Phone size](_images/phone.png)
 Screenshots of the Gallery in Desktop size
-![Desktop size](desktop_gallery.png)
+![Desktop size](_images/desktop_gallery.png)
 Screenshots of the Gallery in Tablet size
-![Tablet size](tablet_gallery.png)
+![Tablet size](_images/tablet_gallery.png)
 Screenshots of the Gallery in Phone size
-![Phone size](phone_gallery.png)
+![Phone size](_images/phone_gallery.png)
 
 
 
