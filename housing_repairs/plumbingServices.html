@@ -9,26 +9,27 @@
 <body>
     <!-- Wrapper to contain the whole page -->
     <div id="wrapper">
-        <header id="mainHeader">
-            <!-- Top bar with quick links -->
+                <header id="mainHeader">
             <div class="topBar">
                 <a href="#" class="topBarLink"> 083 555 6743</a>
                 <div class="socialIcons">
-                    <a href="https://web.whatsapp.com/" class="topBarLink"><img src="_images/whatsapp.png" alt="Whatsapp link"></a>
+                    <a href="https://web.whatsapp.com/" class="topBarLink"><img src="_images/whatsapp.png"
+                            alt="Whatsapp link"></a>
                 </div>
             </div>
             <div class="headerContent">
-                <!-- Company Logo --> 
+                <!-- Company Logo -->
                 <div id="logo">
                     <img src="_images/housing_repairs_logo.png" alt="Housing Repairs Logo" width="150" height="150">
                 </div>
+
                 <!-- Navigation Bar -->
                 <nav id="topnav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li>
-                            <label for="serviceDropdown"> <a href="services.html"> Services: </a></label>
+                            <label for="serviceDropdown" class="currentPage"><a href="services.html"> Services: </a></label>
                             <select id="serviceDropdown" onchange="location = this.value;">
                                 <option value="">select</option>
                                 <option value="electricalservices.html">Electrical Services</option>
@@ -37,10 +38,33 @@
                             </select>
                         </li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>     
+                        <li><a href="contact.html">Contact Us</a></li>
+                        
                     </ul>
                 </nav>
-            </div>
+                <!-- Mobile hamburger menu -->
+                <div class="mobile-only1">
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html"> Services </a></li>
+                            <li><a href="electricalservices.html">Electrical Services</a></li>
+                            <li><a href="housemaintenance.html">House Maintenance</a></li>
+                            <li class="currentPage"><a href="plumbingservices.html">Plumbing Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            
+                        </ul>
+                    </nav>
+
+                </div>
         </header>
 
         <main id="mainContent">
@@ -136,6 +160,6 @@
             </div>
         </footer>
     </div>
-
+<script src="scripts.js"></script>
 </body>
 </html>
