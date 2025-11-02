@@ -818,6 +818,48 @@ button:hover {
 .logoImage img:hover {
   transform: scale(1.1);
 }
+.logoGridContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 30px 0;
+  animation: scrollLogos 40s linear infinite;
+}
+
+.logoImage {
+  flex: 0 0 auto;
+}
+
+.logoImage img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.logoGridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  padding: 40px 0;
+  justify-items: center;
+  background: #fff;
+}
+
+.logoImage img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logoImage img.hop {
+  transform: translateY(-25px);
+}
 
 
 /* Responsive Design for the About Us Page*/
@@ -861,10 +903,6 @@ button:hover {
 
 }
 
-
-/* ==========================================
-   RESPONSIVE DESIGN (MOBILE - max-width: 600px)
-========================================== */
 @media (max-width: 600px) {
 #plu
   #aboutInformation,
