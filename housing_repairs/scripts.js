@@ -64,7 +64,7 @@ const contactForm = document.getElementById("contactForm");
           contactForm.reset();
         })
         .catch((error) => {
-          showError("⚠️ Failed to send message. Please try again later.");
+          showError("! Failed to send message. Please try again later.");
           console.error("EmailJS Error:", error);
         });
     });
@@ -94,17 +94,17 @@ const branches = {
   jhb: {
     name: "Johannesburg (Head Office)",
     coords: [-26.0517, 28.0239],
-    details: "45 Main Road, Sandton, Johannesburg<br>083 555 6743<br>Mon–Fri: 08:00–17:00"
+    details: "45 Main Road, Sandton, Johannesburg<br>083 555 6743<br>Mon-Fri: 08:00-17:00"
   },
   pta: {
     name: "Pretoria (Branch Office)",
     coords: [-25.7473, 28.1767],
-    details: "17 Church Street, Arcadia, Pretoria<br>054 555 3704<br>Mon–Fri: 08:00–17:00"
+    details: "17 Church Street, Arcadia, Pretoria<br>054 555 3704<br>Mon-Fri: 08:00-17:00"
   },
   dbn: {
     name: "Durban (Branch Office)",
     coords: [-29.8356, 31.0158],
-    details: "89 Florida Road, Morningside, Durban<br>085 555 5427<br>Mon–Fri: 08:00–17:00"
+    details: "89 Florida Road, Morningside, Durban<br>085 555 5427<br>Mon-Fri: 08:00-17:00"
   }
 };
 
@@ -136,3 +136,6 @@ function focusBranch(branchKey) {
     <p>${branch.details}</p>
   `;
 }
+
+
+

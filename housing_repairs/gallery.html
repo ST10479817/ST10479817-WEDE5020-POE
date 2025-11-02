@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Repairs - Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Wrapper to contain the whole page -->
     <div id="wrapper">
@@ -39,7 +41,7 @@
                         </li>
                         <li class="currentPage"><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                       
+
                     </ul>
                 </nav>
                 <!-- Mobile hamburger menu -->
@@ -60,7 +62,7 @@
                             <li><a href="plumbingservices.html">Plumbing Services</a></li>
                             <li class="currentPage"><a href="gallery.html">Gallery</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
-                            
+
                         </ul>
                     </nav>
 
@@ -69,13 +71,13 @@
 
         <!-- Main Content -->
         <main id="mainContent">
-            
+
             <section id="galleryInformation">
                 <h1>Our Work Gallery</h1>
                 <p>Explore our extensive portfolio of completed projects.</p>
                 <!-- Gallery Section -->
                 <section id="plumbingSection">
-                    <h2>Plumbing Projects</h2>                   
+                    <h2>Plumbing Projects</h2>
                     <div class="galleryGrid">
                         <div class="image">
                             <img src="_images/bathroom.png" alt="bathroom">
@@ -155,14 +157,25 @@
             </section>
         </main>
 
+        <!-- Lightbox -->
+        <div id="categoryLightbox" class="hidden">
+            <span id="lbClose">&times;</span>
+            <img id="lbImage" src="" alt="">
+            <div id="lbCaption"></div>
+            <a id="lbPrev" class="lbArrow">&#10094;</a>
+            <a id="lbNext" class="lbArrow">&#10095;</a>
+        </div>
+
         <!-- Footer -->
         <footer id="mainFooter">
             <div class="footerContainer">
                 <div class="footerColumn">
-                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120" height="120">
-                    <p>Housing Repairs is your trusted partner for professional home maintenance, delivering fast, reliable, and certified plumbing, electrical, and general repair services since 2021.</p>
+                    <img src="_images/housing_repairs_logo.png" alt="Housing Repairs logo small" width="120"
+                        height="120">
+                    <p>Housing Repairs is your trusted partner for professional home maintenance, delivering fast,
+                        reliable, and certified plumbing, electrical, and general repair services since 2021.</p>
                 </div>
-                    
+
                 <div class="footerColumn">
                     <h3>Follow Us</h3>
                     <div class="socialIcons">
@@ -183,8 +196,10 @@
                 <p>&copy; 2025 Housing Repairs. All Rights Reserved.</p>
             </div>
         </footer>
-    
+
     </div>
-<script src="scripts.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
