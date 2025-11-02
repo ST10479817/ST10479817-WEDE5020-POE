@@ -1462,6 +1462,11 @@ button:hover {
     width: 100%;
   }
 
+  #contactForm label {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
   #contactForm input,
   #contactForm select,
   #contactForm textarea {
@@ -1469,7 +1474,7 @@ button:hover {
   }
 
   #contactForm button {
-    font-size: 1rem;
+    font-size: 0.81rem;
     padding: 12px;
   }
 
