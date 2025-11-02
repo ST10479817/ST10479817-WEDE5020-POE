@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Housing Repairs - Contact Us</title>
+    <title>Housing Repairs | Enquiry Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -32,7 +28,7 @@
                 <!-- Navigation Bar -->
                 <nav id="topnav">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li>Home</li>
                         <li><a href="about.html">About Us</a></li>
                         <li>
                             <label for="serviceDropdown"><a href="services.html"> Services: </a></label>
@@ -44,11 +40,11 @@
                             </select>
                         </li>
                         <li><a href="gallery.html">Gallery</a></li>
-                        <li class="currentPage"><a href="contact.html">Contact Us</a></li>
-                        <li><a href="enquiry.html">Enquiry Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="currentPage"><a href="enquiry.html">Enquiry Us</a></li>
                     </ul>
                 </nav>
-                <!-- Mobile hamburger menu -->
+                <!-- Mobile hamburger + menu -->
                 <div class="mobile-only1">
                     <div class="hamburger">
                         <span class="bar"></span>
@@ -59,14 +55,13 @@
                     <nav class="nav-menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html"> Services </a></li>
                             <li><a href="electricalservices.html">Electrical Services</a></li>
                             <li><a href="housemaintenance.html">House Maintenance</a></li>
                             <li><a href="plumbingservices.html">Plumbing Services</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
-                            <li class="currentPage"><a href="contact.html">Contact Us</a></li>
-                            <li><a href="enquiry.html">Enquiry Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li class="currentPage"><a href="enquiry.html">Enquiry Us</a></li>
                         </ul>
                     </nav>
 
@@ -74,77 +69,47 @@
         </header>
 
         <main id="mainContent">
-             <!-- Contact Us Details -->
-            <div id="contactDetails">
-                <h1>Contact Us</h1>
-                <p>Get in touch with one of our offices near you. We are here to help with plumbing, electrical, and
-                    home maintenance needs.</p>
-            </div>
 
-
-
-            <section id="mapSection">
-                <h2>Find Our Branches</h2>
-                <div id="branchesMap"></div>
-
-                <!-- Buttons to select to zoom into on maps -->
-                <div id="mapButtons">
-                    <button onclick="focusBranch('jhb')">Johannesburg</button>
-                    <button onclick="focusBranch('pta')">Pretoria</button>
-                    <button onclick="focusBranch('dbn')">Durban</button>
-                </div>
-
-                <!-- Branch information appears here -->
-                <div id="branchInfo">
-                    <p>Click a branch to view more details.</p>
-                </div>
+            <!-- Welcome Message -->
+            <section class="enquiryIntro">
+                <h1>Service Enquiry</h1>
+                <p>
+                    Please complete the form below to enquire about our services.
+                    Whether you're interested in plumbing, electrical or maintenance work —
+                    we'll respond with pricing, availability, or any other information you need.
+                </p>
             </section>
 
-            <section id="contactSection">
-                <h2 class="headingForm">Send Us a Message</h2>
-                <p>Please fill in your information below. <span class="required">*</span> indicates required fields.</p>
+            <!-- Services Section -->
+            <section class="enquiryFormSection">
+                <form id="enquiryForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required minlength="3">
 
-                <form id="contactForm">
-                    <!-- Name -->
-                    <label for="fullName">Full Name <span class="required">*</span></label>
-                    <input type="text" id="fullName" name="fullName" required minlength="3"
-                        placeholder="Enter your full name">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
 
-                    <!-- Email -->
-                    <label for="email">Email Address <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0831234567"
+                        required>
 
-                    <!-- Phone -->
-                    <label for="phone">Phone Number <span class="required">*</span></label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
-                        placeholder="e.g. 0831234567">
+                    <label for="enquiryType">Enquiry Type:</label>
+                    <select id="enquiryType" name="enquiryType" required>
+                        <option value="">Select a Service</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="maintenance">Maintenance</option>
 
-                    <!-- Location -->
-                    <label for="location">Location / City</label>
-                    <input type="text" id="location" name="location" placeholder="Your city">
-
-                    <!-- Message Type -->
-                    <label for="messageType">Type of Message <span class="required">*</span></label>
-                    <select id="messageType" name="messageType" required>
-                        <option value="">-- Please Select --</option>
-                        <option value="Plumbing">Plumbing</option>
-                        <option value="Electrical">Electrical</option>
-                        <option value="Maintenance">Maintenance</option>
-                        <option value="General">General</option>
-                        <option value="Other">Other</option>
                     </select>
 
-                    <!-- Message Body -->
-                    <label for="message">Message <span class="required">*</span></label>
-                    <textarea id="message" name="message" rows="6" required minlength="10"
-                        placeholder="Type your message here..."></textarea>
+                    <label for="message">Message / Details:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Provide details about your enquiry..."
+                        required></textarea>
 
-                    <!-- Submit Button -->
-                    <button type="submit">Send Message</button>
-
-                    <!-- Feedback Message -->
-                    <div id="formFeedback"></div>
+                    <button type="submit">Submit Enquiry</button>
                 </form>
+
+                <div id="responseMessage"></div>
             </section>
         </main>
 
@@ -177,6 +142,7 @@
             </div>
         </footer>
     </div>
+    <script src="enquiry.html"></script>
     <script src="scripts.js"></script>
 </body>
 
