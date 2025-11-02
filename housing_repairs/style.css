@@ -905,11 +905,25 @@ button:hover {
 
 }
 
-
-
-
-
 /* Services Page */
+#searchContainer {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#serviceSearch {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+#serviceSearch:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
 #serviceInformation {
   background: #fff;
     padding: 20px;
@@ -917,7 +931,10 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     text-align: center;
+}
 
+#serviceInformation h2{
+  text-align: center;
 }
 .servicesPage h3{
   color: #1c398e;
@@ -943,6 +960,10 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
+}
+.centerHeadings{
+  align-items: center;
+  text-align: center;
 }
 #plumbingCard {
     background-color: #ebf3fe;
@@ -1014,6 +1035,7 @@ button:hover {
   .serviceImage img {
     max-width: 220px;
   }
+  
 
 }
 

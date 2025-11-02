@@ -71,14 +71,21 @@
         <!-- Main Content -->
         <main id="mainContent">
 
+            <div id="searchContainer">
+  <div><h2>Search Our Services</h2></div>
+  <input type="text" id="serviceSearch" placeholder="Search for a service...">
+</div> 
+
             <section id="serviceInformation">     
                 <h1>Our Services</h1>
                 <p>Housing Repairs provides professional services in plumbing, electrical work, and general home maintenance. Click below to learn more about each service.</p>
             </section>     
 
             <section id="plumbingCard">
-                <h2>Plumbing Services</h2>
-                <p>We handle leak detection, burst pipes, drain unblocking, bathroom and kitchen plumbing installations, and more.</p>
+                <div class="centerHeadings">
+                    <h2>Plumbing Services</h2>
+                    <p>We handle leak detection, burst pipes, drain unblocking, bathroom and kitchen plumbing installations, and more.</p>
+                </div>
                 <article class="serviceBoxes">
                     <h3>Leak Detection & Repairs</h3>
                     <p>Advanced leak detection and professional repairs for all types of water leaks.</p>  
@@ -108,8 +115,10 @@
 
             <!-- Electrical Section -->  
             <section id="electricalCard">
-                <h2>Electrical Services</h2>
-                <p>Our certified electricians provide fault finding, lighting installations, socket & switch installations, compliance certificates and backup power setups.</p>
+                <div class="centerHeadings">
+                    <h2>Electrical Services</h2>
+                    <p>Our certified electricians provide fault finding, lighting installations, socket & switch installations, compliance certificates and backup power setups.</p>
+                </div>
                 <article class="serviceBoxes">
                     <h3>Fault Finding & Repairs</h3>
                     <p>Expert electrical fault diagnosis and repairs for all electrical issues.</p>  
@@ -135,8 +144,10 @@
 
             <!-- General House Maintenance Section -->
             <section id="maintenanceCard">
-                <h2>General House Maintenance</h2>
-                <p>We offer painting, tiling, waterproofing, carpentry, ceiling & drywall repairs and other handyman tasks to keep your home in top shape.</p>
+                <div class="centerHeadings">
+                    <h2>General House Maintenance</h2>
+                    <p>We offer painting, tiling, waterproofing, carpentry, ceiling & drywall repairs and other handyman tasks to keep your home in top shape.</p>
+                </div>
                 <article class="serviceBoxes">
                     <h3>Painting & Waterproofing</h3>
                     <p>Interior and exterior painting with professional waterproofing services.</p>  
@@ -188,6 +199,7 @@
             </div>
         </footer>
     </div>
-<script src="scripts.js"></script>
+    <script src="servicesearch.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
