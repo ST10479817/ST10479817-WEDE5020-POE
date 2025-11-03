@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="contact Housing Repairs, home maintenance, plumbing services, electrical repairs, South Africa, branch locations">
-    <meta name="description" content="Contact Housing Repairs for plumbing, electrical, and home maintenance services in South Africa. Fill out our form or find our branches in Johannesburg, Pretoria, and Durban.">
+    <meta name="keywords"
+        content="contact Housing Repairs, home maintenance, plumbing services, electrical repairs, South Africa, branch locations">
+    <meta name="description"
+        content="Contact Housing Repairs for plumbing, electrical, and home maintenance services in South Africa. Fill out our form or find our branches in Johannesburg, Pretoria, and Durban.">
     <title>Housing Repairs | Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
     <!-- Leaflet JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 
@@ -76,15 +77,14 @@
         </header>
 
         <main id="mainContent">
-             <!-- Contact Us Details -->
+            <!-- Contact Us Details -->
             <div id="contactDetails">
                 <h1>Contact Us</h1>
                 <p>Get in touch with one of our offices near you. We are here to help with plumbing, electrical, and
                     home maintenance needs.</p>
             </div>
 
-
-
+            <!-- This is the Map Section-->
             <section id="mapSection">
                 <h2>Find Our Branches</h2>
                 <div id="branchesMap"></div>
@@ -102,9 +102,13 @@
                 </div>
             </section>
 
+            <!-- This is the Contact Form Section -->
             <section id="contactSection">
-                <h2 class="headingForm">Send Us a Message</h2>
-                <p>Please fill in your information below. <span class="required">*</span> indicates required fields.</p>
+                <div class="centerHeadings">
+                    <h2 class="headingForm">Send Us a Message</h2>
+                    <p>Please fill in your information below. <span class="required">*</span> indicates required fields.
+                    </p>
+                </div>
 
                 <form id="contactForm">
                     <!-- Name -->
@@ -179,6 +183,7 @@
             </div>
         </footer>
     </div>
+    <!-- The connection to the JavaScript -->
     <script src="scripts.js"></script>
 </body>
 

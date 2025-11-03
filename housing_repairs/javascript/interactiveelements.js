@@ -1,3 +1,4 @@
+// This is the for the logo hoping
 document.addEventListener("DOMContentLoaded", () => {
   const logos = document.querySelectorAll(".logoImage img");
 
@@ -7,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (Math.random() < 0.5) {
         logo.classList.add("hop");
 
-        // Remove the hop after a short delay
         setTimeout(() => {
           logo.classList.remove("hop");
         }, 500);

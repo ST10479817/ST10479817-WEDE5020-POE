@@ -1,4 +1,4 @@
-
+// Service Search Tab 
 const searchInput = document.getElementById("serviceSearch");
 
 searchInput.addEventListener("keyup", function() {

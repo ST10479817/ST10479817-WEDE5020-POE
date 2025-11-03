@@ -7,17 +7,17 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-menu a").forEach(link => 
+document.querySelectorAll(".nav-menu a").forEach(link =>
   link.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   })
 );
- 
+
 //On Homepage
 function scrollComments(direction) {
   const container = document.querySelector('.commentsGrid');
-  const scrollAmount = 320; 
+  const scrollAmount = 320;
   container.scrollBy({
     left: direction * scrollAmount,
     behavior: 'smooth'
@@ -27,59 +27,52 @@ function scrollComments(direction) {
 
 //On the Contact Page
 const contactForm = document.getElementById("contactForm");
-    const feedback = document.getElementById("formFeedback");
+const feedback = document.getElementById("formFeedback");
 
-    contactForm.addEventListener("submit", function(e) {
-      e.preventDefault();
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-      // Collect data
-      const formData = {
-        fullName: contactForm.fullName.value.trim(),
-        email: contactForm.email.value.trim(),
-        phone: contactForm.phone.value.trim(),
-        location: contactForm.location.value.trim(),
-        messageType: contactForm.messageType.value,
-        message: contactForm.message.value.trim()
-      };
+  // Collect data
+  const formData = {
+    fullName: contactForm.fullName.value.trim(),
+    email: contactForm.email.value.trim(),
+    phone: contactForm.phone.value.trim(),
+    location: contactForm.location.value.trim(),
+    messageType: contactForm.messageType.value,
+    message: contactForm.message.value.trim()
+  };
 
-      // Client-side validation
-      if (formData.fullName.length < 3) {
-        return showError("Full name must be at least 3 characters long.");
-      }
-      if (!validateEmail(formData.email)) {
-        return showError("Please enter a valid email address.");
-      }
-      if (!/^[0-9]{10}$/.test(formData.phone)) {
-        return showError("Phone number must be 10 digits.");
-      }
-      if (formData.message.length < 10) {
-        return showError("Message must be at least 10 characters long.");
-      }
+  // Validation Error Handling
+  if (formData.fullName.length < 3) {
+    return showError("Full name must be at least 3 characters long.");
+  }
+  if (!validateEmail(formData.email)) {
+    return showError("Please enter a valid email address.");
+  }
+  if (!/^[0-9]{10}$/.test(formData.phone)) {
+    return showError("Phone number must be 10 digits.");
+  }
 
-      // Send email with EmailJS
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
-        .then(() => {
-          feedback.style.color = "green";
-          feedback.textContent = "✅ Your message has been sent successfully!";
-          contactForm.reset();
-        })
-        .catch((error) => {
-          showError("! Failed to send message. Please try again later.");
-          console.error("EmailJS Error:", error);
-        });
-    });
+  if (formData.message.length < 10) {
+    return showError("Message must be at least 10 characters long.");
+  }
 
-    function showError(msg) {
-      feedback.style.color = "red";
-      feedback.textContent = msg;
-    }
+  setTimeout(() => {
+    feedback.style.color = "green";
+    feedback.textContent = "✅ Your message has been received! We will get back to you shortly.";
+    contactForm.reset();
+  }, 500);
 
-    function validateEmail(email) {
-      return /^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email);
-    }
+});
 
+function showError(msg) {
+  feedback.style.color = "red";
+  feedback.textContent = msg;
+}
 
-
+function validateEmail(email) {
+  return /^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email);
+}
 
 // Initialize the map
 var map = L.map('branchesMap').setView([-28.0, 28.5], 6);

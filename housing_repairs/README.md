@@ -132,6 +132,13 @@ I have added more information with extra research. I have added more detail and 
 ### 9f ReadMe needs to be improved
 I have added more infomation from Part 1 and fixed the images. I have also added Part 2 into the ReadMe.
 
+## Improvements to Part 3:
+### 9g Improve the use of <div>
+I have added new tags and replaced the unncerrary tags with "<section>" and "<article>".
+### 9h Styling Interactive Elements 
+I have added more hover, focus, active to most text and buttons.
+### 9i Needed to add Responsive Typography
+I have improved my typography so the text will change sizes as the screen changes size.
 
 ## Part 2
 
@@ -209,3 +216,6 @@ Available at: https://wordpress.org/showcase/
 Xneelo, no date. Xneelo — South Africa. [Online]
 Available at: https://xneelo.co.za/
 [Accessed 6 August 2025].
+Leaflet, 2010. Leaflet An open-source JavaScript library for interactive maps. [Online] 
+Available at: https://leafletjs.com/
+[Accessed 1 November 2025].
